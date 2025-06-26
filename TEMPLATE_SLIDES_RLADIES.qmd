@@ -1,0 +1,262 @@
+---
+title: "R-Ladies Vitória"
+#title-slide-attributes:
+#    data-background-image: logo_rodape.png
+#    data-background-size: contain
+#    data-background-opacity: "0.5"
+format: 
+  revealjs:
+    footer: "R-Ladies Vitória"
+    theme: rladies_theme.scss
+    #include-after-body: clean_title_page.html
+    logo: logo_rodape.png
+    center-title-slide: true
+    transition: none
+    transition-speed: default
+    width: 1600
+    height: 900
+execute: 
+  include: true
+  eval: true
+  echo: false
+---
+
+## Tamanho do texto {transition="none"}
+
+### Tamanho do texto
+
+#### Tamanho do texto
+
+Tamanho do texto
+
+
+## Formatação
+
+**Negrito**, *itálico*, `código`, [sublinhado]{.underline}, [hyperlink](https://rladies.org/), ~~riscado~~, ^sobrescrito^, ~subscrito~
+
+> Este é um exemplo de citação
+
+``` r
+#  Este é um exemplo de uma linha de código
+```
+
+## Layout simples
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+## Layout com texto pequeno {.smaller}
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+## Layout com lista
+
+Lista não incrementada
+
+-   Primeiro item da lista;
+-   Segundo item da lista.
+
+Lista incrementada
+
+::: incremental
+-   Com incrementação;
+-   Novamente com incrementação.
+:::
+
+## Layout com scroll {.scrollable}
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+## Layout com comentário e nota
+
+Coloque seu texto com comentário aqui.[^1]
+
+[^1]: Aqui está o comentário adicional, clique S para visualizar a nota.
+
+::: aside
+Título da nota (opcional)
+:::
+
+::: notes
+Aqui está a nota registrada.
+:::
+
+## Layout com rodapé customizado
+
+::: footer
+Aqui está o rodapé customizado
+:::
+
+## Layout sem rodapé customizado
+
+::: footer
+:::
+
+## Layout com duas colunas
+
+::::: columns
+::: {.column width="50%"}
+**Coluna 1**
+
+Conteúdo da coluna 1
+:::
+
+::: {.column width="50%"}
+**Coluna 2**
+
+Conteúdo da coluna 2
+:::
+:::::
+
+## Layout com três colunas
+
+:::::: columns
+::: {.column width="33%"}
+**Coluna 1**
+
+Conteúdo da coluna 1
+:::
+
+::: {.column width="33%"}
+**Coluna 2**
+
+Conteúdo da coluna 2
+:::
+
+::: {.column width="33%"}
+**Coluna 3**
+
+Conteúdo da coluna 3
+:::
+::::::
+
+## Layout com abas {.smaller}
+
+::: panel-tabset
+### Aba A
+
+Conteúdo da `Tab A`
+
+### Aba B
+
+Conteúdo da `Tab B`
+
+### Aba C
+
+Conteúdo da `Tab C`
+:::
+
+# Imagens 
+
+## Imagens posição 1
+
+![](logo.png){.absolute  bottom=0 right=50 width="300" height="300"}
+
+![](logo.png){.fragment width="300" height="300"}
+
+## Imagem 2
+
+Aqui uma imagem:
+
+![](logo.png){.r-stretch}
+
+Texto depois da imagem.
+
+## Imagem 3
+
+Aqui uma imagem:
+
+![](logo.png){.nostretch fig-align="center" width="100px"}
+
+Texto depois da imagem.
+
+## Imagem 4
+
+Aqui uma imagem:
+
+![](logo.png){.nostretch fig-align="center" width="300"}
+
+Texto depois da imagem.
+
+## Background 1 {
+background-color="none"
+background-image="background01.png" background-position="center"
+background-opacity="0.7"
+background-repeat="nonrepeat"
+}
+
+
+## Background 2 {background-color="aquamarine"}
+
+
+
+## {background-image="background02.png" background-size="contain" background-position="left"}
+
+::: columns
+::: {.column width="20%"}
+:::
+
+::: {.column width="80%"}
+
+## Background 3 {.r-fit-text}
+
+Texto 
+
+:::
+:::
+
+
+
+# Layouts com códigos
+
+## Código e o resultado do código
+
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+set.seed(123)
+dados <- rnorm(100, mean = 10, sd = 2)
+media <- mean(dados)
+hist(dados, main = paste("Média =", round(media, 2)))
+```
+
+## Apenas o resultado
+
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+set.seed(123)
+dados <- rnorm(100, mean = 10, sd = 2)
+media <- mean(dados)
+hist(dados, main = paste("Média =", round(media, 2)))
+```
+
+## Apenas o código
+
+```{r eval = FALSE, echo = TRUE, include = TRUE}
+set.seed(123)
+dados <- rnorm(100, mean = 10, sd = 2)
+media <- mean(dados)
+hist(dados, main = paste("Média =", round(media, 2)))
+```
+
+## Código com linhas destacadas
+
+Código com linhas destacadas fixas
+
+```{.r code-line-numbers="2,4"}
+set.seed(123)
+dados <- rnorm(100, mean = 10, sd = 2)
+media <- mean(dados)
+hist(dados, main = paste("Média =", round(media, 2)))
+```
+
+Código com linhas destacadas incrementadas
+
+```{.r code-line-numbers="2|4"}
+set.seed(123)
+dados <- rnorm(100, mean = 10, sd = 2)
+media <- mean(dados)
+hist(dados, main = paste("Média =", round(media, 2)))
+```
+
+
+
+
+
+# Agradeço pela atenção! {.center}

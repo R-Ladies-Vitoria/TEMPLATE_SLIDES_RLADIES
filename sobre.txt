@@ -1,0 +1,47 @@
+Objetivo: 
+
+Criar um template de slides genérico e versátil para apresentações do R-Ladies Vitória.
+
+O que deve ter:
+
+Capa: tema, data, apresentadores
+Configuração de textos, listas, plots, imagens, tabelas, links.
+Varias formas layout para páginas
+
+Rodapé/Cabeçalho
+
+divisão: 
+capa
+sumário
+referências
+equipe (elaboração do conteudo,apresentador, espatrocinadores, nome, cargo e links), 
+hora da foto
+agradecimentos
+
+Identidade Visual:
+Logo
+Cores
+Fonte
+Tamanho
+Hexagonos
+Imagens de vitória
+Dados 
+
+Principais layouts:
+
+Título e subtítulo
+Divisor
+
+
+
+Adicionais:
+Mudar cor do texto
+italico
+hiperlink
+grifar
+citação
+
+
+https://quarto.org/docs/reference/formats/html.html#includes
+https://quarto.org/docs/presentations/revealjs/#overview
+  

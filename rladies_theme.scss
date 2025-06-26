@@ -1,0 +1,29 @@
+/*-- scss:defaults --*/
+// https://quarto.org/docs/presentations/revealjs/themes.html
+// https://quarto.org/docs/output-formats/html-themes-more.html
+// https://prerelease.quarto.org/docs/presentations/revealjs/themes.html#creating-themes
+  // fonts
+$font-family-sans-serif: "Palatino Linotype", "Book Antiqua", Palatino,
+FreeSerif, serif !default;
+
+// colors
+$body-bg: #f5f0f7 !default;
+  $body-color: #2d142e!default;
+  $link-color: #d05dd6 !default;
+  $selection-bg: #803682 !default;
+  
+  // headings
+$presentation-heading-font: "Palatino Linotype", "Book Antiqua", Palatino,
+FreeSerif, serif !default;
+$presentation-heading-color: #2d142e !default;
+  
+  /*-- scss:rules --*/
+  
+  .reveal a {
+    line-height: 1.3em;
+  }
+  
+  .reveal {
+  background-color: #fff;  // Your desired background color
+}
+
