@@ -191,29 +191,7 @@ Conteúdo da `Tab C`
 
 ## Background 1 {background-color="#803682"}
 
-## {background-image="background02.png" background-size="contain" background-position="left"}
-
-## Background 2 {
-background-color="#a7a9ac"
-background-image="imagens/ponte4.jpg" background-position="center"
-background-opacity="1"
-background-repeat="nonrepeat"
-}
-
-
-::: columns
-::: {.column width="20%"}
-:::
-
-::: {.column width="80%"}
-
-## Background 3 {.r-fit-text}
-
-Texto 
-
-:::
-:::
-
+## Background 2 {background-image="imagens/ponte4.jpg"}
 
 
 # Layouts com códigos
